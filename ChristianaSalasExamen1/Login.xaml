@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChristianaSalasExamen1.MainPage">
+
+    <StackLayout>
+        <Image Source="https://images.credly.com/images/5fa5afb9-9976-4fc1-bdeb-1c1f2573e8b9/ORO.png"></Image>
+        <Frame BackgroundColor="DarkCyan" Padding="16" CornerRadius="0">
+            <Label Text="EXAMEN MOMENTO 1" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+            
+        </Frame>
+
+        <Entry x:Name="txtUser" Placeholder="Usuario" ></Entry>
+        <Entry x:Name="txtPass" Placeholder="Contraseña" IsPassword="True" />
+
+        <Button x:Name="btnAbrir" Text="Abrir" Clicked="btnAbrir_Clicked" ></Button>
+    </StackLayout>
+
+</ContentPage>

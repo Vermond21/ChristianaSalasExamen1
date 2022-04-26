@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChristianaSalasExamen1.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="REGISTRO DE ESTUDIANTE" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Green" FontSize="30"/>
+            <Label/>
+            <Label x:Name="lbluser" FontSize="20" HorizontalTextAlignment="Start" TextColor="Black" BackgroundColor="YellowGreen"/>
+            <Label/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Datos del Estudiante" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Placeholder="Ingrese Nombre del Estudiante" Keyboard="Text" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="Monto Inicial" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtMontoIni" Placeholder="Ingrese Monto Inicial " Keyboard="Numeric" Grid.Row="1" Grid.Column="1"></Entry>
+                <Label Text="Tres Cuotas de" FontSize="20" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtCuotaPar" Placeholder="Valor de la cuota" IsReadOnly="True" Keyboard="Numeric"  Grid.Row="2" Grid.Column="1"></Entry>
+                <Entry x:Name="txtFinalF"  IsReadOnly="True" TextColor="White"  Grid.Row="3" Grid.Column="0"></Entry>
+                <Button x:Name="btnCuota" Text="Calcular" Clicked="btnCuota_Clicked"  Grid.Row="3" Grid.Column="1"></Button>
+
+
+            </Grid>
+            <Button x:Name="btnResumen" Text="GUARDAR" Clicked="btnResumen_Clicked"  FontSize="24" BackgroundColor="ForestGreen"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
